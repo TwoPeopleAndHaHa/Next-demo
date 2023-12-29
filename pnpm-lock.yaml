@@ -29,6 +29,9 @@ dependencies:
   next:
     specifier: ^14.0.2
     version: registry.npmmirror.com/next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0)(react@18.2.0)
+  next-auth:
+    specifier: 5.0.0-beta.4
+    version: registry.npmmirror.com/next-auth@5.0.0-beta.4(next@14.0.4)(react@18.2.0)
   postcss:
     specifier: 8.4.31
     version: registry.npmmirror.com/postcss@8.4.31
@@ -44,6 +47,9 @@ dependencies:
   typescript:
     specifier: 5.2.2
     version: registry.npmmirror.com/typescript@5.2.2
+  use-debounce:
+    specifier: ^10.0.0
+    version: registry.npmmirror.com/use-debounce@10.0.0(react@18.2.0)
   zod:
     specifier: ^3.22.2
     version: registry.npmmirror.com/zod@3.22.4
@@ -104,6 +110,24 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': registry.npmmirror.com/@jridgewell/gen-mapping@0.3.3
       '@jridgewell/trace-mapping': registry.npmmirror.com/@jridgewell/trace-mapping@0.3.20
+
+  registry.npmmirror.com/@auth/core@0.18.4:
+    resolution: {integrity: sha512-GsNhsP1xE/3FoNS3dVkPjqRljLNJ4iyL2OLv3klQGNvw3bMpROFcK4lqhx7+pPHiamnVaYt2vg1xbB+lsNaevg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@auth/core/-/core-0.18.4.tgz}
+    name: '@auth/core'
+    version: 0.18.4
+    peerDependencies:
+      nodemailer: ^6.8.0
+    peerDependenciesMeta:
+      nodemailer:
+        optional: true
+    dependencies:
+      '@panva/hkdf': registry.npmmirror.com/@panva/hkdf@1.1.1
+      cookie: registry.npmmirror.com/cookie@0.6.0
+      jose: registry.npmmirror.com/jose@5.2.0
+      oauth4webapi: registry.npmmirror.com/oauth4webapi@2.4.0
+      preact: registry.npmmirror.com/preact@10.11.3
+      preact-render-to-string: registry.npmmirror.com/preact-render-to-string@5.2.3(preact@10.11.3)
+    dev: false
 
   registry.npmmirror.com/@babel/code-frame@7.23.5:
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/code-frame/-/code-frame-7.23.5.tgz}
@@ -669,6 +693,12 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': registry.npmmirror.com/@nodelib/fs.scandir@2.1.5
       fastq: registry.npmmirror.com/fastq@1.16.0
+
+  registry.npmmirror.com/@panva/hkdf@1.1.1:
+    resolution: {integrity: sha512-dhPeilub1NuIG0X5Kvhh9lH4iW3ZsHlnzwgwbOlgwQ2wG1IqFzsgHqmKPk3WzsdWAeaxKJxgM0+W433RmN45GA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@panva/hkdf/-/hkdf-1.1.1.tgz}
+    name: '@panva/hkdf'
+    version: 1.1.1
+    dev: false
 
   registry.npmmirror.com/@pkgjs/parseargs@0.11.0:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz}
@@ -1610,6 +1640,13 @@ packages:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/convert-source-map/-/convert-source-map-2.0.0.tgz}
     name: convert-source-map
     version: 2.0.0
+
+  registry.npmmirror.com/cookie@0.6.0:
+    resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cookie/-/cookie-0.6.0.tgz}
+    name: cookie
+    version: 0.6.0
+    engines: {node: '>= 0.6'}
+    dev: false
 
   registry.npmmirror.com/cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cross-spawn/-/cross-spawn-7.0.3.tgz}
@@ -3308,6 +3345,12 @@ packages:
     version: 1.4.0
     dev: true
 
+  registry.npmmirror.com/jose@5.2.0:
+    resolution: {integrity: sha512-oW3PCnvyrcm1HMvGTzqjxxfnEs9EoFOFWi2HsEGhlFVOXxTE3K9GKWVMFoFw06yPUqwpvEWic1BmtUZBI/tIjw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jose/-/jose-5.2.0.tgz}
+    name: jose
+    version: 5.2.0
+    dev: false
+
   registry.npmmirror.com/js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/js-tokens/-/js-tokens-4.0.0.tgz}
     name: js-tokens
@@ -3643,6 +3686,24 @@ packages:
     version: 1.4.0
     dev: true
 
+  registry.npmmirror.com/next-auth@5.0.0-beta.4(next@14.0.4)(react@18.2.0):
+    resolution: {integrity: sha512-vgocjvwPA8gxd/zrIP/vr9lJ/HeNe+C56lPP1D3sdyenHt8KncQV6ro7q0xCsDp1fcOKx7WAWVZH5o8aMxDzgw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/next-auth/-/next-auth-5.0.0-beta.4.tgz}
+    id: registry.npmmirror.com/next-auth/5.0.0-beta.4
+    name: next-auth
+    version: 5.0.0-beta.4
+    peerDependencies:
+      next: ^14
+      nodemailer: ^6.6.5
+      react: ^18.2.0
+    peerDependenciesMeta:
+      nodemailer:
+        optional: true
+    dependencies:
+      '@auth/core': registry.npmmirror.com/@auth/core@0.18.4
+      next: registry.npmmirror.com/next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0)(react@18.2.0)
+      react: registry.npmmirror.com/react@18.2.0
+    dev: false
+
   registry.npmmirror.com/next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-qbwypnM7327SadwFtxXnQdGiKpkuhaRLE2uq62/nRul9cj9KhQ5LhHmlziTNqUidZotw/Q1I9OjirBROdUJNgA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/next/-/next-14.0.4.tgz}
     id: registry.npmmirror.com/next/14.0.4
@@ -3762,6 +3823,12 @@ packages:
       console-control-strings: registry.npmmirror.com/console-control-strings@1.1.0
       gauge: registry.npmmirror.com/gauge@3.0.2
       set-blocking: registry.npmmirror.com/set-blocking@2.0.0
+    dev: false
+
+  registry.npmmirror.com/oauth4webapi@2.4.0:
+    resolution: {integrity: sha512-ZWl8ov8HeGVyc9Icl1cag76HvIcDAp23eIIT+UVGir+dEu8BMgMlvZeZwqLVd0P8DqaumH4N+QLQXN69G1QjSA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/oauth4webapi/-/oauth4webapi-2.4.0.tgz}
+    name: oauth4webapi
+    version: 2.4.0
     dev: false
 
   registry.npmmirror.com/object-assign@4.1.1:
@@ -4157,6 +4224,24 @@ packages:
       xtend: registry.npmmirror.com/xtend@4.0.2
     dev: false
 
+  registry.npmmirror.com/preact-render-to-string@5.2.3(preact@10.11.3):
+    resolution: {integrity: sha512-aPDxUn5o3GhWdtJtW0svRC2SS/l8D9MAgo2+AWml+BhDImb27ALf04Q2d+AHqUUOc6RdSXFIBVa2gxzgMKgtZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/preact-render-to-string/-/preact-render-to-string-5.2.3.tgz}
+    id: registry.npmmirror.com/preact-render-to-string/5.2.3
+    name: preact-render-to-string
+    version: 5.2.3
+    peerDependencies:
+      preact: '>=10'
+    dependencies:
+      preact: registry.npmmirror.com/preact@10.11.3
+      pretty-format: registry.npmmirror.com/pretty-format@3.8.0
+    dev: false
+
+  registry.npmmirror.com/preact@10.11.3:
+    resolution: {integrity: sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/preact/-/preact-10.11.3.tgz}
+    name: preact
+    version: 10.11.3
+    dev: false
+
   registry.npmmirror.com/prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prelude-ls/-/prelude-ls-1.2.1.tgz}
     name: prelude-ls
@@ -4245,6 +4330,12 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dev: true
+
+  registry.npmmirror.com/pretty-format@3.8.0:
+    resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pretty-format/-/pretty-format-3.8.0.tgz}
+    name: pretty-format
+    version: 3.8.0
+    dev: false
 
   registry.npmmirror.com/prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prop-types/-/prop-types-15.8.1.tgz}
@@ -5112,6 +5203,18 @@ packages:
     dependencies:
       punycode: registry.npmmirror.com/punycode@2.3.1
     dev: true
+
+  registry.npmmirror.com/use-debounce@10.0.0(react@18.2.0):
+    resolution: {integrity: sha512-XRjvlvCB46bah9IBXVnq/ACP2lxqXyZj0D9hj4K5OzNroMDpTEBg8Anuh1/UfRTRs7pLhQ+RiNxxwZu9+MVl1A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/use-debounce/-/use-debounce-10.0.0.tgz}
+    id: registry.npmmirror.com/use-debounce/10.0.0
+    name: use-debounce
+    version: 10.0.0
+    engines: {node: '>= 16.0.0'}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: registry.npmmirror.com/react@18.2.0
+    dev: false
 
   registry.npmmirror.com/utf-8-validate@6.0.3:
     resolution: {integrity: sha512-uIuGf9TWQ/y+0Lp+KGZCMuJWc3N9BHA+l/UmHd/oUHwJJDeysyTRxNQVkbzsIWfGFbRe3OcgML/i0mvVRPOyDA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/utf-8-validate/-/utf-8-validate-6.0.3.tgz}
